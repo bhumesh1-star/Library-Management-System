@@ -1,0 +1,14 @@
+{
+  "debug.openDebug": "never",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "cSpell.words": [
+    "out_file",
+    "isbn",
+    "json",
+    "LMS",
+    "csvfile",
+    "exports",
+    "cSpell"
+  ]
+}
