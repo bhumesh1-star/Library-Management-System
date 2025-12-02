@@ -1,9 +1,17 @@
+<<<<<<< HEAD
+=======
+#!/usr/bin/env python3
+"""
+Library Management System - CLI
+Uses JSON file for storage and provides CSV export.
+No admin login required.
+"""
+>>>>>>> 6cf64b0 (Update project to LibraryManagementSystem_Final (v3))
 
 import json
 import csv
 import os
 from typing import List, Dict, Optional
-from utils.auth import login
 
 DATA_FILE = "books.json"
 EXPORT_FOLDER = "exports"
@@ -45,7 +53,7 @@ class LibrarySystem:
             with open(self.data_file, "r", encoding="utf-8") as f:
                 content = f.read()
                 data = json.loads(content) if content.strip() else {}
-        except json.JSONDecodeError:
+        except (json.JSONDecodeError, FileNotFoundError):
             data = {}
         # If data is a list convert to dict keyed by isbn
         if isinstance(data, list):
@@ -71,7 +79,7 @@ class LibrarySystem:
             return False
         book = self.books[isbn]
         for k, v in kwargs.items():
-            if hasattr(book, k):
+            if hasattr(book, k) and v is not None:
                 setattr(book, k, int(v) if k in ("year", "copies") else v)
         self.save()
         return True
@@ -99,7 +107,6 @@ class LibrarySystem:
 
     def export_to_csv(self, path: str = EXPORT_FILE):
         os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
-        # use a variable name that doesn't trigger common spell-checkers
         with open(path, "w", newline="", encoding="utf-8") as out_file:
             writer = csv.writer(out_file)
             writer.writerow(["ISBN", "Title", "Author", "Year", "Copies"])
@@ -137,8 +144,7 @@ def menu():
 
 def main():
     print("Welcome to Library Management System")
-   
-
+    # No login required
     system = LibrarySystem()
 
     while True:

@@ -1,0 +1,32 @@
+Demo steps - Library Management System
+
+1. Run the program:
+   python LMS.py
+
+2. Add a book:
+   ISBN: 9780140449136
+   Title: The Odyssey
+   Author: Homer
+   Year: 1999
+   Copies: 3
+
+3. View the book:
+   Select option 2 and enter ISBN.
+
+4. Update the book:
+   Select option 3, enter ISBN, update one or more fields.
+
+5. Delete the book:
+   Select option 4 and confirm.
+
+6. Search books:
+   Option 5 → search "odyssey" or "homer".
+
+7. List all books:
+   Option 6.
+
+8. Export to CSV:
+   Option 7 → file saved to exports/books.csv
+
+9. Exit:
+   Option 8.
