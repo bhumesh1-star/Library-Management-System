@@ -1,8 +1,4 @@
-#!/usr/bin/env python3
-"""
-Library Management System - CLI
-Uses JSON file for storage and provides CSV export.
-"""
+
 import json
 import csv
 import os
