@@ -1,3 +1,71 @@
+# ============================
+# Python cache & environments
+# ============================
 __pycache__/
-exports/
 *.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.egg-info/
+*.eggs/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+*.spec
+
+# Virtual environment folders
+venv/
+env/
+ENV/
+.venv/
+.python-version
+
+# ============================
+# VS Code files
+# ============================
+.vscode/
+.history/
+*.code-workspace
+
+# ============================
+# OS generated files
+# ============================
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+
+# ============================
+# Project-specific exclusions
+# ============================
+
+# Exported CSV files
+books_export.csv
+exports/
+*.csv
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Logs
+*.log
+
+# Backup JSON files
+*.backup.json
+
+# ============================
+# Ignore compiled tkinter cache
+# ============================
+*.tcl
+
+# ============================
+# Testing files
+# ============================
+coverage/
+.pytest_cache/
+htmlcov/
+test-results/
