@@ -1,6 +1,6 @@
 # Library Management System
 
-A Python-based CLI tool to manage library book records using JSON storage and CSV export. Built for academic submission and demonstration.
+A Python-based tool to manage library book records using JSON storage and CSV export. Built for academic submission and demonstration. This project provides a Library Management System implemented in Python. It includes both a GUI and a CLI.
 
 ---
 
