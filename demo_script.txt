@@ -1,32 +1,40 @@
-Demo steps - Library Management System
+Demo Script - Library Management System
 
-1. Run the program:
-   python LMS.py
+Start the GUI:
+python gui.py
 
-2. Add a book:
-   ISBN: 9780140449136
-   Title: The Odyssey
-   Author: Homer
-   Year: 1999
-   Copies: 3
+Add book:
+ISBN: BU2023UGBCA070
+Title: LIBRARY MANAGEMENT SYSTEM Project
+Author: Bhumesh
+Year: 2025
+Copies: 1
 
-3. View the book:
-   Select option 2 and enter ISBN.
+View All to confirm.
 
-4. Update the book:
-   Select option 3, enter ISBN, update one or more fields.
+Verify via CLI:
+python LMS.py
 
-5. Delete the book:
-   Select option 4 and confirm.
+Option 5 (Search books) -> search 'LIBRARY' or 'BU2023UGBCA070'.
 
-6. Search books:
-   Option 5 → search "odyssey" or "homer".
+Option 6 (List all books).
 
-7. List all books:
-   Option 6.
+Update book:
 
-8. Export to CSV:
-   Option 7 → file saved to exports/books.csv
+GUI: Update page, enter ISBN, fill new fields and Apply.
 
-9. Exit:
-   Option 8.
+CLI: Option 3, provide new values or leave blank.
+
+Delete book:
+
+GUI: Delete page, enter ISBN.
+
+CLI: Option 4, type YES to confirm.
+
+Export:
+
+CLI: Option 7 -> exports/books_export.csv
+
+GUI: Export CSV -> books_export.csv
+
+

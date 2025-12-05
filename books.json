@@ -4,7 +4,7 @@
     "title": "The Odyssey",
     "author": "Homer",
     "year": 1999,
-    "copies": 3
+    "copies": 6000
   },
   "9780679783268": {
     "isbn": "9780679783268",
@@ -12,5 +12,12 @@
     "author": "Jane Austen",
     "year": 2000,
     "copies": 2
+  },
+  "85757": {
+    "isbn": "85757",
+    "title": "The Galaxy",
+    "author": "Akash",
+    "year": 2022,
+    "copies": 89999
   }
 }

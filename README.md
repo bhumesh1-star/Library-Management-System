@@ -6,35 +6,40 @@ A Python-based CLI tool to manage library book records using JSON storage and CS
 
 ## Features
 
-- Add, view, update, and delete book records
-- Search books by title, author, or ISBN
-- List all books in a formatted table
-- Export books to CSV
-- JSON-based persistent storage
-- Modular structure with unit tests
-- Simple, reviewer-friendly CLI menu and demo script
+- Add / Update / Delete / Search / List books
+- JSON-based persistent storage (`books.json`)
+- CSV export (`books_export.csv`)
+- GUI using Tkinter (optional `ttkbootstrap` for nicer theme)
+- CLI for quick terminal usage
+- Demo script and simple run scripts included
 
 ---
 
-## How to Run
-
-### Option 1 — Terminal
-```
-python LMS.py
-```
-
-### Option 2 — Windows
-Double-click:
-```
-run.bat
-```
-
+## How to run
+1. Install Python 3.8+.
+2. Optional UI dependency for nicer look:
+   ```
+   pip install ttkbootstrap
+   ```
+3. Run GUI:
+   ```
+   python gui.py
+   ```
+4. Run CLI (if `LMS.py` present):
+   ```
+   python LMS.py
+   ```
+5. If `books.json` is in an old/list format, normalize it:
+   ```
+   python normalize_library.py
+   ```
 ---
 
 ## Folder Structure
 ```
 LibraryManagementSystem/
 ├── LMS.py
+├── gui.py                    
 ├── books.json
 ├── submission.txt
 ├── README.md
@@ -59,6 +64,14 @@ See `demo_script.txt` for full walkthrough.
 
 ---
 
+## 🎯 Project Goals
+
+- Provide a simple, easy-to-use library management tool  
+- Maintain synchronization between GUI and CLI  
+- Ensure clean data storage using JSON  
+- Allow future expansion such as login system, issuing books, analytics, etc.
+
+
 ## Testing
 ```
 python -m unittest discover tests
@@ -67,7 +80,7 @@ python -m unittest discover tests
 ---
 
 ## Submitted By
-**Name:** Bhumesh 
+**Name:** Bhumesh Singh  
 **Roll No:** BU2023UGBCA070  
 
 ---

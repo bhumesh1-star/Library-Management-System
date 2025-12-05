@@ -1,12 +1,9 @@
-<<<<<<< HEAD
-=======
 #!/usr/bin/env python3
 """
 Library Management System - CLI
 Uses JSON file for storage and provides CSV export.
 No admin login required.
 """
->>>>>>> 6cf64b0 (Update project to LibraryManagementSystem_Final (v3))
 
 import json
 import csv
